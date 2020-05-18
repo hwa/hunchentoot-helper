@@ -5,6 +5,7 @@
 ;;
 
 (defparameter *server* nil)
+(defparameter *hunchentoot-log-dir* #p"/tmp")
 
 (defun start-webserver (&optional (port 5000))
   (flet ((prefix-log-dir (log-file)
